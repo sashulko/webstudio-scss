@@ -1,0 +1,43 @@
+:root {
+    --axent: #2196f3;
+    --main: #2f303a;
+    --section: #f5f4fa;
+    --background: #ffffff;
+    --title: #212121;
+    --text: #757575;
+    --firstlogo: #000000;
+    --maintext: #ffffff;
+    --contacts: rgba(255, 255, 255, 0.6);
+    --border: #eeeeee;
+    --heder-shadow: #ececec;
+}
+h1, h2, h3, p, ul, li, input, button, img, a {
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: var(--firstlogo);
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.17;
+    font-family: Roboto;
+    letter-spacing: 0.03em;
+    min-width: max-content;
+}
+button {
+    font-family: "Roboto", sans-serif;
+}
+.main {
+    border-top: solid 1px var(--heder-shadow);
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}

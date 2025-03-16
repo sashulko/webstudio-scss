@@ -1,0 +1,9 @@
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button {
+  @include flex-center;
+  padding: 10px 20px;
+}
