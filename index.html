@@ -1,181 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>WebStudio - головна</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"/>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./reset.css">
-        <link rel="stylesheet" href="./style.css">
-        <link rel="stylesheet" href="css/main.min.css">
-    </head>
-    <body>
-        <!DOCTYPE html>
-<html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .modal {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) scale(0.8);
-            width: 300px;
-            padding: 20px;
-            background: whitesmoke;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-            opacity: 0;
-            visibility: hidden;
-            transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .modal.show {
-            opacity: 1;
-            visibility: visible;
-            transform: translate(-50%, -50%) scale(1);
-        }
-        .backdrop {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .backdrop.show {
-            opacity: 1;
-            visibility: visible;
-        }
-    </style>
-</head>
-<body>
-    <button id="openModal">Замовити</button>
-    <div class="overlay" id="overlay"></div>
-    <div class="modal" id="modal">
-        <img src="./img/astronaut.png" alt="">
-        <button id="closeModal">Закрити</button>
-    </div>
-
-    <script>
-        const modal = document.getElementById('modal');
-        const overlay = document.getElementById('overlay');
-        const openBtn = document.getElementById('openModal');
-        const closeBtn = document.getElementById('closeModal');
-
-        openBtn.addEventListener('click', () => {
-            modal.classList.add('show');
-            overlay.classList.add('show');
-        });
-
-        closeBtn.addEventListener('click', () => {
-            modal.classList.remove('show');
-            overlay.classList.remove('show');
-        });
-    </script>
-</body>
-</html>
-
-        <header class="header container">
-            <a href="#" class="header-logo">
-                <span class="logo-axent">Web<span class="logo-span">Studio</span>
-            </a>
-            <nav class="header-navigation">
-                <ul class="header-list header-pages">
-                    <li class="header-item"><a href="#" class="header-link header-now">Студія</a></li>
-                    <li class="header-item"><a href="portfolio.html" class="header-link">Портфоліо</a></li>
-                    <li class="header-item"><a href="#" class="header-link">Контакти</a></li>
-                </ul>
-                <ul class="header-list header-contacts">
-                    <li class="header-adress"><a href="mailto:info@devstudio.com" class="header-adress-link">info@devstudio.com</a></li>
-                    <li class="header-adress"><a href="tel:+380961111111" class="header-adress-link">+38 096 111 11 11</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main class="main">
-            <section class="mainbanner">
-                <div class="container">
-                    <h1 class="mainbanner-title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-                    <button type="button" class="mainbanner-button">Замовити послугу</button>
-                </div>
-            </section>
-            <section class="features container">
-                <ul class="features-list">
-                    <li class="features-item">
-                        <h3 class="features-title sticker-1">УВАГА ДО ДЕТАЛЕЙ</h3>
-                        <p class="features-text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
-                    </li>
-                    <li class="features-item">
-                        <h3 class="features-title sticker-2">ПУНКТУАЛЬНІСТЬ</h3>
-                        <p class="features-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
-                    </li>
-                    <li class="features-item">
-                        <h3 class="features-title sticker-3">ПЛАНУВАННЯ</h3>
-                        <p class="features-text">Так само консультація з широким активом значною мірою зумовлює.</p>
-                    </li>
-                    <li class="features-item">
-                        <h3 class="features-title sticker-4">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-                        <p class="features-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
-                    </li>
-                </ul>
-            </section>
-            <section class="activites container">
-                <h2 class="activites-title">Чим ми займаємося</h2>
-                <ul class="activites-list">
-                    <li class="activites-item"><img src="./img/coding.jpg" width="370" alt="Розробка" class="activites-img"></li>
-                    <li class="activites-item"><img src="./img/phone.jpg" width="370" alt="Дизайн" class="activites-img"></li>
-                    <li class="activites-item"><img src="./img/colors.jpg" width="370" alt="Дизайн" class="activites-img"></li>
-                </ul>
-            </section>
-            <section class="team">
-                <div class="container"> 
-                    <h2 class="team-title">Наша команда</h2>
-                    <ul class="team-list">
-                        <li class="team-item">
-                            <img src="./img/men.jpg" width="270" alt="Ігор Дем'яненко" class="team-img">
-                            <h3 class="team-name">Ігор Дем'яненко</h3>
-                            <p lang="en" class="team-profession">Product Designer</p>
-                        </li>
-                        <li class="team-item">
-                            <img src="./img/women.jpg" width="270" alt="Ольга Рєпіна" class="team-img">
-                            <h3 class="team-name">Ольга Рєпіна</h3>
-                            <p lang="en" class="team-profession">Frontend Developer</p>
-                        </li>
-                        <li class="team-item">
-                            <img src="./img/men2.jpg" width="270" alt="Микола Тарасов" class="team-img">
-                            <h3 class="team-name">Микола Тарасов</h3>
-                            <p lang="en" class="team-profession">Marketing</p>
-                        </li>
-                        <li class="team-item">
-                            <img src="./img/men3.jpg" width="270" alt="Михайло Єрмаков" class="team-img">
-                            <h3 class="team-name">Михайло Єрмаков</h3>
-                            <p lang="en" class="team-profession">UI Designer</p>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-        </main>
-        <footer class="footer">
-            <div class="container">
-                <a href="./index.html" class="footer-logo">
-                    <span class="logo-axent">Web<span class="logo-white">Studio</span>
-                </a>
-                <address class="footer-adress">
-                    <ul class="footer-list">
-                        <li class="footer-item"><a href="https://www.google.com/maps/place/%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.5190802,30.4385136,538m/data=!3m2!1e3!4b1!4m6!3m5!1s0x40d4d29b9e369069:0xff64663a5fd75cd5!8m2!3d50.5190802!4d30.4385136!16s%2Fg%2F11hz60_tnl?entry=ttu&g_ep=EgoyMDI0MDgyMy4wIKXMDSoASAFQAw%3D%3D" class="footer-link footer-location">м. Київ, пр-т Лесі Українки, 26</a></li>
-                        <li class="footer-item"><a href="mailto:info@devstudio.com" title="Написати" class="footer-link">info@devstudio.com</a></li>
-                        <li class="footer-item"><a href="tel:+380961111111" title="Подзвонити" class="footer-link">+38 096 111 11 11</a></li>
-                    </ul>
-                </address>
-            </div>
-        </footer>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio - головна</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="header container">
+      <a href="#" class="header-logo">
+        Web<span class="logo-span">Studio</span>
+      </a>
+      <nav class="header-navigation">
+        <ul class="header-list header-pages">
+          <li class="header-item">
+            <a href="#" class="header-link header-now">Студія</a>
+          </li>
+          <li class="header-item">
+            <a href="portfolio.html" class="header-link">Портфоліо</a>
+          </li>
+          <li class="header-item">
+            <a href="#" class="header-link">Контакти</a>
+          </li>
+        </ul>
+        <ul class="header-list header-contacts">
+          <li class="header-adress">
+            <a href="mailto:info@devstudio.com" class="header-adress-link"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="header-adress">
+            <a href="tel:+380961111111" class="header-adress-link"
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="mainbanner">
+        <div class="container">
+          <h1 class="mainbanner-title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
+          <button type="button" class="mainbanner-button">
+            Замовити послугу
+          </button>
+        </div>
+      </section>
+      <section class="features container">
+        <ul class="features-list">
+          <li class="features-item">
+            <h3 class="features-title sticker-1">УВАГА ДО ДЕТАЛЕЙ</h3>
+            <p class="features-text">
+              Ідейні міркування, і навіть початок повсякденної роботи з
+              формування позиції.
+            </p>
+          </li>
+          <li class="features-item">
+            <h3 class="features-title sticker-2">ПУНКТУАЛЬНІСТЬ</h3>
+            <p class="features-text">
+              Завдання організації, особливо рамки і місце навчання кадрів тягне
+              у себе.
+            </p>
+          </li>
+          <li class="features-item">
+            <h3 class="features-title sticker-3">ПЛАНУВАННЯ</h3>
+            <p class="features-text">
+              Так само консультація з широким активом значною мірою зумовлює.
+            </p>
+          </li>
+          <li class="features-item">
+            <h3 class="features-title sticker-4">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+            <p class="features-text">
+              Значимість цих проблем настільки очевидна, що реалізація планових
+              завдань.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="activites container">
+        <h2 class="activites-title">Чим ми займаємося</h2>
+        <ul class="activites-list">
+          <li class="activites-item">
+            <img
+              src="./img/coding.jpg"
+              width="370"
+              alt="Розробка"
+              class="activites-img"
+            />
+          </li>
+          <li class="activites-item">
+            <img
+              src="./img/phone.jpg"
+              width="370"
+              alt="Дизайн"
+              class="activites-img"
+            />
+          </li>
+          <li class="activites-item">
+            <img
+              src="./img/colors.jpg"
+              width="370"
+              alt="Дизайн"
+              class="activites-img"
+            />
+          </li>
+        </ul>
+      </section>
+      <section class="team">
+        <div class="container">
+          <h2 class="team-title">Наша команда</h2>
+          <ul class="team-list">
+            <li class="team-item">
+              <img
+                src="./img/men.jpg"
+                width="270"
+                alt="Ігор Дем'яненко"
+                class="team-img"
+              />
+              <h3 class="team-name">Ігор Дем'яненко</h3>
+              <p lang="en" class="team-profession">Product Designer</p>
+            </li>
+            <li class="team-item">
+              <img
+                src="./img/women.jpg"
+                width="270"
+                alt="Ольга Рєпіна"
+                class="team-img"
+              />
+              <h3 class="team-name">Ольга Рєпіна</h3>
+              <p lang="en" class="team-profession">Frontend Developer</p>
+            </li>
+            <li class="team-item">
+              <img
+                src="./img/men2.jpg"
+                width="270"
+                alt="Микола Тарасов"
+                class="team-img"
+              />
+              <h3 class="team-name">Микола Тарасов</h3>
+              <p lang="en" class="team-profession">Marketing</p>
+            </li>
+            <li class="team-item">
+              <img
+                src="./img/men3.jpg"
+                width="270"
+                alt="Михайло Єрмаков"
+                class="team-img"
+              />
+              <h3 class="team-name">Михайло Єрмаков</h3>
+              <p lang="en" class="team-profession">UI Designer</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <a href="./index.html" class="footer-logo">
+          Web<span class="logo-white">Studio</span>
+        </a>
+        <address class="footer-adress">
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a
+                href="https://www.google.com/maps/place/%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D1%97%D0%B2,+02000/@50.5190802,30.4385136,538m/data=!3m2!1e3!4b1!4m6!3m5!1s0x40d4d29b9e369069:0xff64663a5fd75cd5!8m2!3d50.5190802!4d30.4385136!16s%2Fg%2F11hz60_tnl?entry=ttu&g_ep=EgoyMDI0MDgyMy4wIKXMDSoASAFQAw%3D%3D"
+                class="footer-link footer-location"
+                >м. Київ, пр-т Лесі Українки, 26</a
+              >
+            </li>
+            <li class="footer-item">
+              <a
+                href="mailto:info@devstudio.com"
+                title="Написати"
+                class="footer-link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="footer-item">
+              <a href="tel:+380961111111" title="Подзвонити" class="footer-link"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
+    </footer>
+  </body>
 </html>

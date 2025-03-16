@@ -1,0 +1,48 @@
+.header-now {
+    color: var(--axent);
+}
+.header-item {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+.header-adress {
+    font-weight: 500;
+}
+.header-navigation {
+    width: 933px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.header-list {
+    display: flex;
+    padding-left: 0;
+    justify-content: space-between;
+}
+.header-link:hover,
+.header-link:focus,
+.header-adress-link:hover,
+.header-adress-link:focus {
+    color: var(--axent);
+}
+.header-logo:hover {
+    color: var(--axent);
+}
+.header-pages {
+    width: 281px;
+}
+.header-contacts {
+    width: 307px;
+}
+.header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    align-items: center;
+}
+    .header-logo {
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+        margin-right: 93px;
+    }

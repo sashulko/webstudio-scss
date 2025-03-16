@@ -1,0 +1,144 @@
+
+
+.mainbanner {
+    background-image: radial-gradient(circle, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%), url(./img/background.jpg);
+    background-color: grey;
+    background-size: 1600px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 250px 0px;
+    
+    
+    
+}
+.mainbanner-title {
+    margin: 0 auto;
+    color: var(--maintext);
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    font-size: 44px;
+    width: 696px;
+    display: flex;
+    justify-self: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.mainbanner-button {
+    margin: 0 auto;
+    background-color: var(--axent);
+    color: var(--maintext);
+    border: transparent;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    letter-spacing: 0.06em;
+    display: flex;
+    justify-self: center;
+    padding: 10px 32px;
+    line-height: 1.88;
+}
+.mainbanner-button:hover,
+.mainbanner-button:focus {
+    background-color: var(--section);
+    color: var(--firstlogo);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+.features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.features-list {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0;
+}
+.features-item {
+    width: 270px;
+    padding-left: 0;
+}
+.features-text {
+    line-height: 1.71;
+    color: var(--text);
+    font-size: 14px;
+}
+.features-title {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.sticker-1::before{
+    content: "";
+    display: block;
+    margin-bottom: 30px;
+    background-color: var(--section);
+    height: 120px;
+    width: 270px;
+    border-radius: 5px;
+    background-position: center;
+    background-image: url(./img/antenna.png);
+    background-repeat: no-repeat;
+}
+
+.sticker-2::before{
+    content: "";
+    display: block;
+    margin-bottom: 30px;
+    background-color: var(--section);
+    height: 120px;
+    width: 270px;
+    border-radius: 5px;
+    background-position: center;
+    background-image: url(./img/clock.png);
+    background-repeat: no-repeat;
+}
+
+.sticker-3::before{
+    content: "";
+    display: block;
+    margin-bottom: 30px;
+    background-color: var(--section);
+    height: 120px;
+    width: 270px;
+    border-radius: 5px;
+    background-position: center;
+    background-image: url(./img/diagram.png);
+    background-repeat: no-repeat;
+}
+
+.sticker-4::before{
+    content: "";
+    display: block;
+    margin-bottom: 30px;
+    background-color: var(--section);
+    height: 120px;
+    width: 270px;
+    border-radius: 5px;
+    background-position: center;
+    background-image: url(./img/astronaut.png);
+    background-repeat: no-repeat;
+}
+
+.activites {
+    padding-bottom: 94px;
+
+}
+.activites-title {
+    margin-bottom: 50px;
+}
+.activites-list {
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.activites-title {
+    font-size: 36px;
+    text-align: center;
+}
+
+
+

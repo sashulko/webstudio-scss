@@ -1,0 +1,32 @@
+
+.footer {
+    background-color: var(--main);
+    padding: 60px 0;
+}
+.footer-logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    color: var(--background);
+    display: block;
+    margin-bottom: 20px;
+}
+.footer-adress {
+    font-size: 14px;
+}
+.footer-logo:hover {
+    color: var(--axent);
+}
+.footer-link {
+    color: var(--contacts);
+    font-style: normal;
+}
+.footer-item {
+    margin-bottom: 9px;
+}
+.footer-item:last-child {
+    margin-bottom: 0;
+}
+.footer-location {
+    color: var(--background);
+}

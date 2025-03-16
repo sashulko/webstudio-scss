@@ -1,0 +1,61 @@
+.portfolio {
+    padding: 94px 0;
+}
+.hide {
+    display: none;
+}
+.portfolio-button {
+    font-weight: 500;
+    background-color: var(--section);
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    line-height: 1.62;
+    padding: 6px 22px;
+}
+.portfolio-button:hover,
+.portfolio-button:focus {
+    background-color: var(--axent);
+    color: var(--maintext);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+.portfolio-now {
+    background-color: var(--axent);
+    color: var(--maintext);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.portfolio-item {
+    border: var(--border) solid 1px;
+    width: 370px;
+    height: 404px;
+    margin-bottom: 30px;
+}
+
+.portfolio-item:hover{
+    box-shadow: 0px 4px 4px 0px rgba(54, 52, 52, 0.3);
+
+}
+    
+.portfolio-item:last-child,
+.portfolio-item:nth-child(8),
+.portfolio-item:nth-child(7) {
+    margin-bottom: 0px;
+}
+.portfolio-name {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin: 20px 0 4px 24px;
+}
+.portfolio-category {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--text);
+    line-height: 1.87;
+    margin: 0 0 20px 24px;
+}
